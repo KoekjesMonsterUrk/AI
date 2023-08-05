@@ -1,0 +1,22 @@
+class CodeGenerator: 
+
+  def __init__(self): 
+     
+    self.generated_code = [] 
+
+  def create_lines_of_code(self): 
+    
+    for i in range(10): 
+      self.generated_code.append("print('Hello world')")
+  
+  def get_generated_code(self): 
+    return '\n'.join(self.generated_code)
+
+# create instance of CodeGenerator 
+generator = CodeGenerator() 
+
+# generate code 
+generator.create_lines_of_code() 
+
+# get generated code 
+code = generator
